@@ -27,17 +27,17 @@ Partial Class Form1
         Me.ReturnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ForwardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SearchBox = New System.Windows.Forms.ToolStripTextBox()
-        Me.Search = New System.Windows.Forms.Button()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Tl = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
-        Me.ref = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReturnToolStripMenuItem, Me.ForwardToolStripMenuItem, Me.SearchBox})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReturnToolStripMenuItem, Me.ToolStripMenuItem1, Me.ForwardToolStripMenuItem, Me.SearchBox, Me.Tl})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1249, 27)
@@ -47,36 +47,38 @@ Partial Class Form1
         'ReturnToolStripMenuItem
         '
         Me.ReturnToolStripMenuItem.Name = "ReturnToolStripMenuItem"
-        Me.ReturnToolStripMenuItem.Size = New System.Drawing.Size(51, 23)
-        Me.ReturnToolStripMenuItem.Text = "return"
+        Me.ReturnToolStripMenuItem.Size = New System.Drawing.Size(29, 23)
+        Me.ReturnToolStripMenuItem.Text = "←"
         '
         'ForwardToolStripMenuItem
         '
         Me.ForwardToolStripMenuItem.Name = "ForwardToolStripMenuItem"
-        Me.ForwardToolStripMenuItem.Size = New System.Drawing.Size(60, 23)
-        Me.ForwardToolStripMenuItem.Text = "forward"
+        Me.ForwardToolStripMenuItem.Size = New System.Drawing.Size(29, 23)
+        Me.ForwardToolStripMenuItem.Text = "→"
         '
         'SearchBox
         '
-        Me.SearchBox.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.SearchBox.Name = "SearchBox"
         Me.SearchBox.Size = New System.Drawing.Size(500, 23)
         '
-        'Search
+        'ToolStripMenuItem1
         '
-        Me.Search.Location = New System.Drawing.Point(626, 1)
-        Me.Search.Name = "Search"
-        Me.Search.Size = New System.Drawing.Size(75, 23)
-        Me.Search.TabIndex = 1
-        Me.Search.Text = "Search"
-        Me.Search.UseVisualStyleBackColor = True
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(29, 23)
+        Me.ToolStripMenuItem1.Text = "↺"
+        '
+        'Tl
+        '
+        Me.Tl.Name = "Tl"
+        Me.Tl.Size = New System.Drawing.Size(31, 23)
+        Me.Tl.Text = "🔍"
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(118, -2)
+        Me.ProgressBar1.Location = New System.Drawing.Point(92, 26)
         Me.ProgressBar1.Minimum = 1
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(502, 10)
+        Me.ProgressBar1.Size = New System.Drawing.Size(503, 10)
         Me.ProgressBar1.TabIndex = 2
         Me.ProgressBar1.Value = 1
         '
@@ -88,15 +90,6 @@ Partial Class Form1
         Me.WebBrowser1.Size = New System.Drawing.Size(1249, 592)
         Me.WebBrowser1.TabIndex = 3
         '
-        'ref
-        '
-        Me.ref.Location = New System.Drawing.Point(707, 1)
-        Me.ref.Name = "ref"
-        Me.ref.Size = New System.Drawing.Size(75, 23)
-        Me.ref.TabIndex = 4
-        Me.ref.Text = "Refresh"
-        Me.ref.UseVisualStyleBackColor = True
-        '
         'Timer1
         '
         '
@@ -105,10 +98,8 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1249, 315)
-        Me.Controls.Add(Me.ref)
         Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.ProgressBar1)
-        Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
@@ -124,9 +115,9 @@ Partial Class Form1
     Friend WithEvents ReturnToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ForwardToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SearchBox As ToolStripTextBox
-    Friend WithEvents Search As Button
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents WebBrowser1 As WebBrowser
-    Friend WithEvents ref As Button
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents Tl As ToolStripMenuItem
 End Class
